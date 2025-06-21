@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Images/image.png" type="image/x-icon" />
+    <title>Minimalist Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-red-100 min-w-screen min-h-screen flex items-center justify-center"
+  >
+    <main class="bg-white flex flex-col px-12 py-8 h-[650px] justify-between">
+      <div class="flex flex-col">
+        <h1 class="text-6xl">Hi!</h1>
+        <h1 class="text-6xl">Welcome</h1>
+        <p class="text-gray-300">
+          Im waiting for you, please enter your detail
+        </p>
+      </div>
+      <form class="w-full flex flex-col gap-4">
+        <input
+          type="text"
+          class="w-full outline-none border-b border-b-2"
+          placeholder="Username, Email or Phone Number"
+        />
+        <div class="flex justify-between items-center border-b border-b-2">
+          <input
+            id="Password"
+            type="password"
+            class="w-full outline-none"
+            placeholder="Password"
+          />
+          <div
+            id="show-password-container"
+            class="flex items-center justify-center cursor-pointer"
+          >
+            `<i class="fa-solid fa-eye-slash text-gray-300"></i>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex items-center gap-1">
+            <input type="checkbox" />
+            <span class="text-gray-300">Remember Me</span>
+          </div>
+          <a href="./forgotPassword.html" class="text-gray-300"
+            >Forgot Password</a
+          >
+        </div>
+        <button class="bg-gray-800 rounded-lg w-full text-white py-2 text-lg">
+          Log in
+        </button>
+      </form>
+      <div class="flex items-center justify-center gap-1">
+        <p class="text-gray-300">Don't have an account?</p>
+        <a href="./signUp.html">Sign Up</a>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
